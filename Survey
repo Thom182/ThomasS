@@ -1,0 +1,141 @@
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"
+<header>
+<style>body {background-color: #F72350;
+  font-family: 'Alata', sans-serif;
+}
+#box {background-color: #BE3150;
+margin-left:53px;
+margin-right:850px;
+margin-bottom:10px;
+margin-top:20px;
+border-color:#BE3150;
+border-radius:3%;
+align-text:center;
+box-shadow:6px 6px #99263F;}
+
+h1{font-size:30px;
+background-color:#BE3150;
+  align-text:center;
+  padding-left:20px;
+  padding-right:100px;
+margin-right:1250px;
+margin-left:53px;
+box-shadow:3px 3px #99263F;
+border-radius:3px;}
+
+
+p {font-size:19px;
+padding-left:20px;
+padding-top:10px;}
+
+form {padding-left:20px;
+  align-text:center;
+}
+
+#name {margin-left:20px;
+margin-bottom:10px;
+width:230px;
+background-color:black;
+color:white;
+box-shadow:3px 3px grey;
+font-family: 'Alata', sans-serif;}
+
+#email {margin-left:39px;
+margin-bottom:10px;
+width:230px;
+background-color:black;
+color:white;
+box-shadow:3px 3px grey;
+font-family: 'Alata', sans-serif;}
+
+#number {margin-left:17px;
+margin-bottom:10px;
+width:230px;
+background-color:black;
+color:white;
+box-shadow:3px 3px grey;
+font-family: 'Alata', sans-serif;}
+
+#dropdown {margin-left:53px;
+margin-bottom:10px;
+background-color:black;
+color:white;
+box-shadow:3px 3px grey;
+font-family: 'Alata', sans-serif;}
+
+#male {margin-left:29px;
+margin-bottom:10px;}
+
+#xmail {margin-left:10px;
+  margin-top:10px;
+margin-bottom:10px;
+}
+
+#textarea {margin-left:1px;
+  margin-top:20px;
+margin-bottom:10px;
+height:90px;
+width:280px;
+background-color:black;
+color:white;
+box-shadow:3px 3px grey;
+font-family: 'Alata', sans-serif;
+font-size: 12px;
+}
+
+button {
+  background-color:black;
+color:white;
+  border-widht:1px;
+  border-style:solid;
+box-shadow:3px 3px grey;
+font-family: 'Alata', sans-serif;
+font-size: 12px;
+
+  }  
+#submit {animation-name:titilar;
+animation-duration:3s;
+  animation-iteration-count:infinite;}
+  @keyframes titilar {0% {
+    background-color:black;}
+    50% {
+      background-color:#F9083C;}
+    100% {
+      background-color:black;}
+  }
+
+</style>
+
+<h1 id="title"><strong>Formulario</strong></h1>
+<div id="box">  
+<p id="description">Asegurar que toda la información es feaciente y verificable</p>
+</header>
+<form id="survey-form">
+  <label for="name" id="name-label">Nombre </label><input id="name" type="text" required placeholder="Inserte aquí su nombre"></input>
+  <br>
+<label for="email" id="email-label">Email </label><input id="email" type="email" required placeholder="Inserte aquí su correo electrónico"></input>
+<br>
+<label for="number" id="number-label">Teléfono </label><input id="number" type="number" min="1000000000"max="9999999999" required placeholder="Inserte aquí su teléfono"></input>
+<br>
+<label for="country">País</label><select id="dropdown" name="País">
+  <option value="Estonia">Estonia</option>
+  <option value="Irlanda">Irlanda</option>
+  <option value="Nueva Escocia">Nueva Escocia</option>
+  <option value="Antigua Escocia">Antigua Escocia</option>
+</select>
+<br>
+<label for="genre">Género<input id="male" type="radio"value="male" name="genre">Masculino
+<input id="female" Value="female" type="radio" name="genre">Femenino</label>
+<input id="other" value="other" type="radio" name="genre">Otro</label>
+<br>
+<label for="age">Quiere que se le responda
+  <input id="xmail" type="checkbox"value="xmail" name="age" checked >por email</label>
+<input id="sms" type="checkbox"value="sms" name="age">por sms</label>
+<br>
+<textarea name="comment" form="usrform" id="textarea">Comentarios adicionales</textarea>
+<br>
+<button type="submit" id="submit">Enviar </button>
+       </form>
+<br>
+</div>
+
